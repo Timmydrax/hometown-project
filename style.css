@@ -178,6 +178,8 @@ h6 {
   gap: var(--sixteen-px);
   max-width: 300px;
   border-radius: 8px;
+  border: 1.5px solid #000;
+  border-bottom: 4px solid #000;
 
   > span {
     padding-inline: 1rem;
