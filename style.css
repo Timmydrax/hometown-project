@@ -101,6 +101,7 @@ h6 {
   flex-direction: column;
 }
 
+/* Hero Section */
 .hero-section {
   background-color: var(--light-yellow);
   display: flex;
@@ -145,6 +146,7 @@ h6 {
   height: 520px;
 }
 
+/* Activity Sections */
 .activities-section {
   display: flex;
   flex-direction: column;
@@ -240,4 +242,76 @@ h6 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* Tour Guide Section */
+.tour-guide {
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--forty-eight-px);
+}
+
+.tour-guide-box {
+  background-color: var(--light-yellow);
+  border-radius: var(--eight-px);
+  border-block-end: 4px solid #000;
+  max-width: 646px;
+  width: 100%;
+  padding-block: var(--thirty-two-px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--thirty-two-px);
+
+  > h2 {
+    font-size: var(--thirty-two-px);
+    font-weight: 600;
+    color: var(--dark-green);
+  }
+}
+
+.tour-content {
+  max-width: 534px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--twenty-four-px);
+}
+
+.tour-guide-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 300px;
+  width: 100%;
+  gap: var(--eight-px);
+
+  > h2 {
+    font-size: var(--twenty-four-px);
+  }
+
+  > span {
+    font-size: var(--twenty-px);
+  }
+
+  > p {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-block: var(--twenty-four-px);
+  gap: 1rem;
+  color: #fff;
 }
