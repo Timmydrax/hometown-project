@@ -10,6 +10,7 @@
   }
 }
 
+/* Tablet screens */
 @media (max-width: 768px) {
   .hero-text {
     max-width: 320px;
@@ -61,7 +62,8 @@
 
     > p {
       padding-inline: 0.5rem;
-      padding-block-end: 0.5rem;
+      -webkit-padding-after: 0.5rem;
+              padding-block-end: 0.5rem;
       font-size: 0.75rem;
     }
   }
@@ -75,7 +77,7 @@
     width: 100%;
     padding-block: var(--twenty-four-px);
     gap: var(--twenty-four-px);
-  
+
     > h2 {
       font-size: var(--twenty-four-px);
     }
@@ -88,18 +90,153 @@
     max-width: 300px;
     width: 100%;
     gap: var(--eight-px);
-  
+
     > h2 {
       font-size: var(--twenty-px);
     }
-  
+
     > span {
       font-size: var(--sixteen-px);
     }
-  
+
     > p {
       font-size: 1rem;
     }
   }
-  
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .hero-section {
+    padding-inline: 1rem;
+    padding-block: 1rem;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sixteen-px);
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: var(--sixteen-px);
+    text-align: center;
+
+    > h1 {
+      font-size: 2rem;
+    }
+
+    > h2 {
+      font-size: var(--sixteen-px);
+    }
+  }
+
+  .activities-section {
+    padding-block: var(--twenty-four-px);
+    text-align: center;
+
+    > h2 {
+      font-size: var(--twenty-four-px);
+      font-weight: 600;
+    }
+  }
+
+  .activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--twenty-px);
+  }
+
+  .activity-1,
+  .activity-2,
+  .activity-3 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sixteen-px);
+    max-width: 300px;
+    border-radius: 8px;
+    border: 1.5px solid #000;
+    border-bottom: 4px solid #000;
+
+    > span {
+      padding-inline: 1rem;
+      font-size: var(--twenty-px);
+      font-weight: 600;
+    }
+
+    > p {
+      padding-inline: 1rem;
+      -webkit-padding-after: 1rem;
+              padding-block-end: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  .tour-guide {
+    padding-block: var(--twenty-four-px);
+  }
+
+  .tour-guide-box {
+    background-color: var(--light-yellow);
+    border-radius: var(--eight-px);
+    -webkit-border-after: 4px solid #000;
+            border-block-end: 4px solid #000;
+    max-width: 300px;
+    width: 100%;
+    padding-block: var(--twenty-four-px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--sixteen-px);
+
+    > h2 {
+      font-size: var(--twenty-four-px);
+    }
+  }
+
+  .tour-content {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--twenty-four-px);
+    text-align: center;
+  }
+
+  .tour-guide-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 300px;
+    width: 100%;
+    gap: var(--eight-px);
+    padding-inline: 0.5rem;
+
+    > h2 {
+      font-size: var(--twenty-px);
+    }
+
+    > span {
+      font-size: var(--sixteen-px);
+    }
+
+    > p {
+      font-size: 14px;
+    }
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding-block: var(--sixteen-px);
+    gap: 0.5rem;
+    color: #fff;
+  }
 }
