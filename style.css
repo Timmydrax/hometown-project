@@ -18,6 +18,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: "Libre Baskerville", serif;
+  min-height: 100vh;
 }
 
 /* 5. Improve media defaults */
@@ -90,3 +91,56 @@ h6 {
   --forty-eight-px: 3rem;
 }
 
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  background-color: var(--light-yellow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--twenty-four-px);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: var(--twenty-four-px);
+
+  > h1 {
+    font-size: 4rem;
+    color: var(--light-orange);
+
+    > span {
+      color: var(--dark-green);
+    }
+  }
+
+  > h2 {
+    font-size: var(--twenty-four-px);
+  }
+}
+
+.hero-img {
+  background-image: url(./assets/images/Hero\ Image.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 520px;
+}
