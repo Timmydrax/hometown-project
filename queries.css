@@ -1,0 +1,105 @@
+/* Big Tablets and Small Laptops */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
+
+  .activities {
+    gap: var(--thirty-two-px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    max-width: 320px;
+    gap: var(--twenty-four-px);
+
+    > h1 {
+      font-size: 2.5rem;
+      color: var(--light-orange);
+    }
+
+    > h2 {
+      font-size: var(--twenty-px);
+    }
+  }
+
+  .hero-img {
+    background-image: url(./assets/images/Hero\ Image.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 320px;
+  }
+
+  .activities-section {
+    > h2 {
+      font-size: var(--twenty-four-px);
+      font-weight: 600;
+    }
+  }
+
+  .activity-1,
+  .activity-2,
+  .activity-3 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--eight-px);
+    max-width: 220px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid #000;
+    border-bottom: 4px solid #000;
+
+    > span {
+      padding-inline: 0.5rem;
+      font-size: var(--sixteen-px);
+      font-weight: 600;
+    }
+
+    > p {
+      padding-inline: 0.5rem;
+      padding-block-end: 0.5rem;
+      font-size: 0.75rem;
+    }
+  }
+
+  .activities {
+    gap: var(--sixteen-px);
+  }
+
+  .tour-guide-box {
+    max-width: 600px;
+    width: 100%;
+    padding-block: var(--twenty-four-px);
+    gap: var(--twenty-four-px);
+  
+    > h2 {
+      font-size: var(--twenty-four-px);
+    }
+  }
+
+  .tour-guide-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 300px;
+    width: 100%;
+    gap: var(--eight-px);
+  
+    > h2 {
+      font-size: var(--twenty-px);
+    }
+  
+    > span {
+      font-size: var(--sixteen-px);
+    }
+  
+    > p {
+      font-size: 1rem;
+    }
+  }
+  
+}
