@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: "Libre Baskerville", serif;
 }
 
 /* 5. Improve media defaults */
@@ -68,3 +69,24 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* My CSS Codes */
+:root {
+  --dark-green: #0fa3b1;
+  --cream: #f9f7f3;
+  --light-yellow: #eddea4;
+  --light-orange: #f7a072;
+  --four-px: 0.25rem;
+  --eight-px: 0.5rem;
+  --twelve-px: 0.75rem;
+  --sixteen-px: 1rem;
+  --twenty-px: 1.25rem;
+  --twenty-four-px: 1.5rem;
+  --twenty-eight-px: 1.75rem;
+  --thirty-two-px: 2rem;
+  --thirty-six-px: 2.25rem;
+  --forty-px: 2.5rem;
+  --forty-four-px: 2.75rem;
+  --forty-eight-px: 3rem;
+}
+
